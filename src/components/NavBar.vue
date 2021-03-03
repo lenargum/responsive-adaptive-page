@@ -10,7 +10,7 @@
         <a href="#">WORK</a>
       </div>
       <div class="navbar__logo">
-        <img src="@/assets/img/navbar/Logo.png" alt="">
+        <img src="@/assets/img/navbar/logo.png" alt="">
       </div>
       <div class="navbar__menu-item">
         <a href="#">SHOP</a>

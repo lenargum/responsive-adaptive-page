@@ -14,18 +14,7 @@
     <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
         Please enable it to continue.</strong>
 </noscript>
-<script>
-    function ibg() {
-        let ibg = document.querySelectorAll(".ibg");
-        for (var i = 0; i < ibg.length; i++) {
-            if (ibg[i].querySelector('img')) {
-                ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
-            }
-        }
-    }
 
-    ibg();
-</script>
 <div id="app"></div>
 <!-- built files will be auto injected -->
 </body>

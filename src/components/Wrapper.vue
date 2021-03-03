@@ -1,25 +1,25 @@
 <template>
   <div class="wrapper">
-    <main class="page">
-      <NavBar/>
-      <ContentPost/>
-    </main>
+    <Page/>
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar";
-import ContentPost from "@/components/ContentPost";
+import Page from "@/components/Page";
+
 export default {
-name: "Wrapper",
-  components: {ContentPost, NavBar}
+  name: "Wrapper",
+  components: {
+    Page,
+  }
 }
 </script>
 
 <style lang="scss">
 .wrapper {
-  @extend ;
   overflow: hidden;
   min-height: 100%;
 }
+
+
 </style>

@@ -6,20 +6,19 @@
 </template>
 
 <script>
-
 import NavBar from "@/components/NavBar";
 import ContentPost from "@/components/ContentPost";
+
 export default {
   name: 'App',
   components: {
     ContentPost,
     NavBar
-
-  }
+  },
 }
 </script>
 
-<style>
+<style lang="scss">
 /*
 Сброс стилей CSS
 https://medium.com/@stasonmars/%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-%D1%81%D0%B1%D1%80%D0%BE%D1%81-css-f5816963c82b
@@ -102,5 +101,22 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
 }
 </style>

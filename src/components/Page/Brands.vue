@@ -30,11 +30,21 @@
             <img src="@/assets/img/content-grid/bycicle2.png" alt="">
           </div>
         </div>
+        <div class="brands__column brands__column_tablet">
+          <a href="#" class="brands__item item">
+          <span class="item__logo">
+            <img src="@/assets/img/logos/logo1.png" alt="">
+          </span>
+            <span class="item__image ibg">
+            <img src="@/assets/img/content-grid/bycicle1.png" alt="">
+          </span>
+          </a>
+        </div>
       </div>
     </section>
-    <section class="brands brands_rev">
+    <section class="brands brands">
       <div class="brands__row">
-        <div class="brands__column brands__column_b">
+        <div class="brands__column brands__column_tablet">
           <a href="#" class="brands__item item">
           <span class="item__logo">
             <img src="@/assets/img/logos/logo2.png" alt="">
@@ -61,6 +71,16 @@
           <div class="brands__image ibg">
             <img src="@/assets/img/content-grid/bycicle3.png" alt="">
           </div>
+        </div>
+        <div class="brands__column brands__column_b">
+          <a href="#" class="brands__item item">
+          <span class="item__logo">
+            <img src="@/assets/img/logos/logo2.png" alt="">
+          </span>
+            <span class="item__image ibg">
+            <img src="@/assets/img/content-grid/bycicle4.png" alt="">
+          </span>
+          </a>
         </div>
       </div>
     </section>
@@ -104,6 +124,16 @@
           </span>
           </a>
         </div>
+        <div class="brands__column brands__column_tablet">
+          <a href="#" class="brands__item item">
+          <span class="item__logo">
+            <img src="@/assets/img/logos/logo3.png" alt="">
+          </span>
+            <span class="item__image ibg">
+            <img src="@/assets/img/content-grid/bycicle5.png" alt="">
+          </span>
+          </a>
+        </div>
       </div>
     </section>
   </div>
@@ -117,15 +147,15 @@ export default {
 
 <style lang="scss" scoped>
 .brands {
-  &_rev {
-    .brands__column {
-      order: 1;
-
-      &_b {
-        order: 2;
-      }
-    }
-  }
+  //&_rev {
+  //  .brands__column {
+  //    order: 1;
+  //
+  //    &_b {
+  //      order: 2;
+  //    }
+  //  }
+  //}
 
   &__row {
     display: flex;
@@ -136,6 +166,9 @@ export default {
 
     &_b {
       flex: 0 1 66.667%;
+    }
+    &_tablet{
+      display: none;
     }
   }
 
@@ -174,6 +207,46 @@ export default {
     &_last{
       .brands__column{
         &:nth-child(1){
+          order: 1;
+        }
+        &:nth-child(2){
+          order: 2;
+        }
+        &:nth-child(3){
+          order: 3;
+        }
+        &:nth-child(4){
+          order: 4;
+        }
+      }
+    }
+    &__column{
+      flex: 0 1 50%;
+      &_b{
+        flex: 0 1 100%;
+      }
+      &_tablet{
+        display: block;
+        & span {
+          background-position: bottom right;
+        }
+
+      }
+    }
+    &__row {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 767px) {
+    &__column{
+      &_tablet{
+        display: none;
+      }
+    }
+    &_last{
+      .brands__column{
+        &:nth-child(1){
           order: 2;
         }
         &:nth-child(2){
@@ -184,9 +257,9 @@ export default {
         }
       }
     }
-
     &__row {
       flex-direction: column;
+      flex-wrap: nowrap;
     }
   }
 }
@@ -229,10 +302,13 @@ export default {
   }
 
   @media (max-width: 1100px) {
-    height: auto;
     padding: 0 0 70% 0;
   }
+  @media (max-width: 767px) {
+    height: 100%;
+  }
   @media (max-width: 600px) {
+    height: auto;
     max-height: 50vh;
     padding: 0 0 70% 0;
   }

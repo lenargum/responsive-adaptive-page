@@ -10,6 +10,7 @@
     <Brands/>
     <AboutUs/>
     <Shop/>
+    <Subscribe/>
   </main>
 </template>
 
@@ -18,10 +19,12 @@ import Header from "@/components/Page/Header";
 import AboutUs from "@/components/Page/AboutUs";
 import Brands from "@/components/Page/Brands";
 import Shop from "@/components/Page/Shop";
+import Subscribe from "@/components/Page/Subscribe";
 
 export default {
   name: "Page",
   components: {
+    Subscribe,
     Shop,
     Brands,
     AboutUs,

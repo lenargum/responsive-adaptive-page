@@ -11,6 +11,7 @@
     <AboutUs/>
     <Shop/>
     <Subscribe/>
+    <Footer/>
   </main>
 </template>
 
@@ -20,10 +21,12 @@ import AboutUs from "@/components/Page/AboutUs";
 import Brands from "@/components/Page/Brands";
 import Shop from "@/components/Page/Shop";
 import Subscribe from "@/components/Page/Subscribe";
+import Footer from "@/components/Page/Footer";
 
 export default {
   name: "Page",
   components: {
+    Footer,
     Subscribe,
     Shop,
     Brands,

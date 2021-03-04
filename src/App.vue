@@ -120,7 +120,7 @@ select {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  //position: relative;
 }
 
 .ibg img {

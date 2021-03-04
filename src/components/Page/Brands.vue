@@ -145,17 +145,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .brands {
-  //&_rev {
-  //  .brands__column {
-  //    order: 1;
-  //
-  //    &_b {
-  //      order: 2;
-  //    }
-  //  }
-  //}
 
   &__row {
     display: flex;

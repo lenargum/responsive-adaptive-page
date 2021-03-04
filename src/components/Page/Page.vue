@@ -5,18 +5,18 @@
       <div class="main-screen__bg ibg">
       </div>
     </div>
-    <SinglePost/>
+    <AboutUs/>
   </main>
 </template>
 
 <script>
 import Header from "@/components/Page/Header";
-import SinglePost from "@/components/Page/SinglePost";
+import AboutUs from "@/components/Page/AboutUs";
 
 export default {
   name: "Page",
   components: {
-    SinglePost,
+    AboutUs,
     Header
   }
 }

@@ -5,19 +5,18 @@
       <div class="main-screen__bg ibg">
       </div>
     </div>
-    <div class="content">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias assumenda consequuntur dignissimos dolor
-      dolore eligendi eveniet, expedita ipsum iusto magni nihil obcaecati officia officiis ratione rem totam ut vero.
-    </div>
+    <SinglePost/>
   </main>
 </template>
 
 <script>
-import Header from "@/components/Header";
+import Header from "@/components/Page/Header";
+import SinglePost from "@/components/Page/SinglePost";
 
 export default {
   name: "Page",
   components: {
+    SinglePost,
     Header
   }
 }
@@ -46,5 +45,11 @@ export default {
     top: 0;
     left: 0;
   }
+}
+
+.container {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 </style>

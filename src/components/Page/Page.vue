@@ -3,6 +3,7 @@
     <Header/>
     <div class="main-screen">
       <div class="main-screen__bg ibg">
+        <img src="@/assets/img/main-fullscreen.png" alt="">
       </div>
     </div>
     <AboutUs/>
@@ -38,7 +39,6 @@ export default {
   position: relative;
 
   &__bg {
-    background-image: url("~@/assets/img/main-fullscreen.png");
     position: absolute;
     width: 100%;
     height: 100%;

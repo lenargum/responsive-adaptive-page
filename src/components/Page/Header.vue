@@ -35,6 +35,7 @@ export default {
   methods: {
     toggleMenu: function () {
       this.isActive = !this.isActive;
+      document.body.style.overflow = this.isActive ? 'hidden' : ''
     }
   }
 }

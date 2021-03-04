@@ -8,6 +8,8 @@
     </div>
     <AboutUs/>
     <Brands/>
+    <AboutUs/>
+    <Shop/>
   </main>
 </template>
 
@@ -15,10 +17,12 @@
 import Header from "@/components/Page/Header";
 import AboutUs from "@/components/Page/AboutUs";
 import Brands from "@/components/Page/Brands";
+import Shop from "@/components/Page/Shop";
 
 export default {
   name: "Page",
   components: {
+    Shop,
     Brands,
     AboutUs,
     Header

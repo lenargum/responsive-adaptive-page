@@ -266,15 +266,32 @@ export default {
     height: 100%;
     top: 0;
     left: 0;
+
     display: flex;
+    flex-direction: column;
+
     transition: all 0.3s ease 0s;
+
     justify-content: center;
     align-items: center;
+
+
     background-color: rgba(100, 194, 158, 0.5);
     z-index: 2;
 
     opacity: 0;
     visibility: hidden;
+
+    span {
+      font-family: "Lato", sans-serif;
+      margin: 10px 0 0 0;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 2.8px;
+      display: block;
+      text-transform: uppercase;
+      color: #fff;
+    }
   }
 
   &__image {

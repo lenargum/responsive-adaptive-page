@@ -7,16 +7,19 @@
       </div>
     </div>
     <AboutUs/>
+    <Brands/>
   </main>
 </template>
 
 <script>
 import Header from "@/components/Page/Header";
 import AboutUs from "@/components/Page/AboutUs";
+import Brands from "@/components/Page/Brands";
 
 export default {
   name: "Page",
   components: {
+    Brands,
     AboutUs,
     Header
   }

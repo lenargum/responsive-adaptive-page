@@ -35,9 +35,11 @@ export default {
 .generation {
   background-color: #f7f7f7;
   padding: 120px 0;
+
   &__block {
 
   }
+
   @media (max-width: 900px) {
     padding: 80px 0;
   }
@@ -71,7 +73,31 @@ export default {
     font-size: 18px;
     line-height: 34px;
     color: #848789;
-  }
 
+    &_j {
+      text-align: justify;
+      font-size: 16px;
+      line-height: 30px;
+
+      &:after {
+        content: '';
+        display: block;
+        margin: 35px auto 0 auto;
+        width: 50px;
+        height: 1px;
+        background-color: #ebebeb;
+
+      }
+    }
+  }
+  @media (max-width: 1500px) {
+    &__text{
+      &_j{
+        &:after{
+          margin: 15px auto 0 auto;
+        }
+      }
+    }
+  }
 }
 </style>

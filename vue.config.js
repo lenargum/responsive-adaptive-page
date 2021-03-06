@@ -13,5 +13,12 @@ module.exports = {
     },
     publicPath: process.env.NODE_ENV === 'production'
         ? '/responsive-adaptive-page/'
-        : '/'
+        : '/',
+    css: {
+        loaderOptions: {
+            sass: {
+                additionalData: '@import "@/assets/scss/_devices.scss";'
+            }
+        }
+    }
 };

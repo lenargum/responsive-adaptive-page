@@ -1,27 +1,35 @@
 <template>
-  <header class="header">
-    <div class="header__row">
-      <nav class="header__menu menu">
-        <div class="menu__icon icon-menu" v-bind:class="{ active: isActive }"
-        v-on:click="toggleMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu__body" v-bind:class="{ active: isActive }">
-          <ul class="menu__list">
-            <li><a href="" class="menu__link">about us</a></li>
-            <li><a href="" class="menu__link">work</a></li>
-            <li><a href="" class="menu__link">shop</a></li>
-            <li><a href="" class="menu__link">contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="header__logo">
-        <img src="@/assets/img/logos/logo.png" alt="">
+  <div>
+    <div class="main-screen">
+      <div class="main-screen__bg ibg">
+        <img src="@/assets/img/main-fullscreen.png" alt="">
       </div>
     </div>
-  </header>
+    <header class="header">
+      <div class="header__row">
+        <nav class="header__menu menu">
+          <div class="menu__icon icon-menu" v-bind:class="{ active: isActive }"
+               v-on:click="toggleMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu__body" v-bind:class="{ active: isActive }">
+            <ul class="menu__list">
+              <li><a href="" class="menu__link">about us</a></li>
+              <li><a href="" class="menu__link">work</a></li>
+              <li><a href="" class="menu__link">shop</a></li>
+              <li><a href="" class="menu__link">contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="header__logo">
+          <img src="@/assets/img/logos/logo.png" alt="">
+        </div>
+      </div>
+    </header>
+  </div>
+
 </template>
 
 <script>
@@ -42,9 +50,23 @@ export default {
 </script>
 
 <style lang="scss">
-@media (max-width: 767px) {
+@media (max-width: $tabletWidth) {
   body.lock {
     overflow: hidden;
+  }
+}
+
+.main-screen {
+  flex: 1 0 100%;
+  position: relative;
+  height: 100vh;
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -75,7 +97,7 @@ export default {
     transform: translateX(-50%);
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $tabletWidth) {
     top: 15px;
   }
 }
@@ -134,7 +156,7 @@ export default {
     text-decoration: none;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $tabletWidth) {
     &__body {
       position: fixed;
       width: 100%;
@@ -195,11 +217,11 @@ export default {
 }
 
 .icon-menu {
-  @media (max-width: 767px) {
+  @media (max-width: $tabletWidth) {
     display: block;
     position: absolute;
     top: 33px;
-    right: 15px;
+    right: 33px;
     width: 30px;
     height: 18px;
     cursor: pointer;

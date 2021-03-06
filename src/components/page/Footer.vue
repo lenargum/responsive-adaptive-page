@@ -75,10 +75,10 @@ export default {
 
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: $desktopMinWidth) {
     padding: 50px 0;
   }
-  @media (max-width: 600px){
+  @media (max-width: $mobileWidth){
     padding: 30px 0;
     &__row {
       flex-direction: column;
@@ -87,7 +87,7 @@ export default {
     &__address{
       padding: 0;
     }
-    &__socials {
+    &__social {
       margin: 15px 0;
     }
   }

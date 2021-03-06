@@ -43,7 +43,7 @@ export default {
   @media (max-width: 900px) {
     padding: 80px 0;
   }
-  @media (max-width: 600px) {
+  @media (max-width: $mobileWidth) {
     padding: 30px 0;
   }
 }
@@ -90,7 +90,7 @@ export default {
       }
     }
   }
-  @media (max-width: 1500px) {
+  @media (max-width: $desktopMaxWidth) {
     &__text{
       &_j{
         &:after{

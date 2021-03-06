@@ -3,7 +3,7 @@
     <section class="brands">
       <div class="brands__row">
         <div class="brands__column brands__column_b">
-          <a href="#" class="brands__item item">
+          <a href="#" class="brands__item item pe-none">
           <span class="item__logo">
             <img src="@/assets/img/logos/logo1.png" alt="">
           </span>
@@ -189,12 +189,12 @@ export default {
     padding: 0 0 37.51% 0;
   }
 
-  @media (max-width: 1500px) {
+  @media (max-width: $desktopMaxWidth) {
     &__content {
       padding: 40px 35px 30px 35px;
     }
   }
-  @media (max-width: 1100px) {
+  @media (max-width: $desktopMinWidth) {
     &_last{
       .brands__column{
         &:nth-child(1){
@@ -229,7 +229,7 @@ export default {
       flex-wrap: wrap;
     }
   }
-  @media (max-width: 767px) {
+  @media (max-width: $tabletWidth) {
     &__column{
       &_tablet{
         display: none;
@@ -309,16 +309,20 @@ export default {
     }
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: $desktopMinWidth) {
     padding: 0 0 70% 0;
   }
-  @media (max-width: 767px) {
+  @media (max-width: $tabletWidth) {
     height: 100%;
   }
-  @media (max-width: 600px) {
+  @media (max-width: $mobileWidth) {
     height: auto;
     max-height: 50vh;
     padding: 0 0 70% 0;
   }
+}
+
+.pe-none{
+  pointer-events: none;
 }
 </style>

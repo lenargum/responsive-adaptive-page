@@ -98,12 +98,12 @@ export default {
     }
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: $tabletWidth) {
     &__body {
       padding: 50px 0;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: $mobileWidth) {
     &__form {
       display: block;
     }

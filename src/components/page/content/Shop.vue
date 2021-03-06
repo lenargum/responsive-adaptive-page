@@ -151,7 +151,7 @@ export default {
     text-decoration: none;
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: $desktopMinWidth) {
     &__body{
       flex-wrap: wrap;
     }
